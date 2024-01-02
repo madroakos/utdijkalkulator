@@ -13,17 +13,17 @@
         <h1 class="text-center mt-4 mb-4">Utazási költség kalkulátor</h1>
         <div>
             <div class="input-group-sm field">
-                <label>Távolság:</label>
+                <label for="kmField">Távolság:</label>
                 <input type="text" class="form-control" id="kmField">
                 <span class="input-group-text">km</span>
             </div>
             <div class="input-group-sm field">
-                <label>Átlagos fogyasztás:</label>
+                <label for="consumptionInputField">Átlagos fogyasztás:</label>
                 <input type="text" class="form-control" id="consumptionInputField">
                 <span class="input-group-text">l/100km</span>
             </div>
             <div class="input-group-sm field">
-                <label>Üzemanyag ára:</label>
+                <label for="priceOfGasInputField">Üzemanyag ára:</label>
                 <input type="text" class="form-control" id="priceOfGasInputField">
                 <span class="input-group-text">Ft/liter</span>
             </div>
@@ -35,7 +35,7 @@
                 <hr>
             </div>
             <div class="input-group-sm field">
-                <label>Vásárolt matrica:</label>
+                <label for="stickerChooser">Vásárolt matrica:</label>
                 <select class="custom-select" id="stickerChooser">
                     <option selected>nincs</option>
                     <option value="1">D1 10 napos</option>
@@ -44,12 +44,12 @@
                 </select>
             </div>
             <div class="input-group-sm field">
-                <label>Egyéb költségek:</label>
+                <label for="otherPrices">Egyéb költségek:</label>
                 <input type="text" class="form-control" id="otherPrices">
                 <span class="input-group-text">Ft</span>
             </div>
             <div class="input-group-sm field">
-                <label>Utazásban résztvevők száma:</label>
+                <label for="numberOfPeople">Utazásban résztvevők száma:</label>
                 <input type="text" class="form-control" id="numberOfPeople">
                 <span class="input-group-text">fő</span>
             </div>
@@ -57,7 +57,7 @@
                 <button type="button" class="btn btn-light" onclick="count()">Számolás</button>
             </div>
             <div class="input-group-sm field d-none" id="divPrice">
-                <label>Útiköltség:</label>
+                <label for="priceOfTrip">Útiköltség:</label>
                 <input type="text" class="form-control" id="priceOfTrip">
                 <span class="input-group-text">Ft</span>
             </div>
