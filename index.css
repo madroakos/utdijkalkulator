@@ -1,0 +1,48 @@
+body {
+    background-color: #3d5a80;
+    color: white;
+    font-family: Avenir;
+}
+
+#kmLabel {
+    color: white;
+    width: 100px;
+    margin-left: 10px;
+    vertical-align: middle;
+    align-items: center;
+}
+
+.field {
+    width: 100%;
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.field > input, select {
+    width: 110px;
+    margin-left: 10px;
+}
+
+.field > label {
+    width: 50%;
+    text-align: right;
+}
+
+h3 {
+    text-align: center;
+}
+
+.otherOptions {
+    margin-top: 30px;
+}
+
+.inline {
+    display: inline-flex;
+}
+
+.middle {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}

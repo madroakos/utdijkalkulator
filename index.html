@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Utazási Költség Kalkulátor</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="index.css" rel="stylesheet"/>
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mt-4 mb-4">Utazási költség kalkulátor</h1>
+        <div>
+            <div class="input-group-sm field">
+                <label>Távolság:</label>
+                <input type="text" class="form-control" id="kmField">
+                <span class="input-group-text">km</span>
+            </div>
+            <div class="input-group-sm field">
+                <label>Átlagos fogyasztás:</label>
+                <input type="text" class="form-control" id="consumptionInputField">
+                <span class="input-group-text">l/100km</span>
+            </div>
+            <div class="input-group-sm field">
+                <label>Üzemanyag ára:</label>
+                <input type="text" class="form-control" id="priceOfGasInputField">
+                <span class="input-group-text">Ft/liter</span>
+            </div>
+            <div class="otherOptions">
+                <hr>
+                <div>
+                    <h3>Egyéb opciók:</h3>
+                </div>
+                <hr>
+            </div>
+            <div class="input-group-sm field">
+                <label>Vásárolt matrica:</label>
+                <select class="custom-select" id="stickerChooser">
+                    <option selected>nincs</option>
+                    <option value="1">D1 10 napos</option>
+                    <option value="2">D1 havi</option>
+                    <option value="3">D1 éves</option>
+                </select>
+            </div>
+            <div class="input-group-sm field">
+                <label>Egyéb költségek:</label>
+                <input type="text" class="form-control" id="otherPrices">
+                <span class="input-group-text">Ft</span>
+            </div>
+            <div class="input-group-sm field">
+                <label>Utazásban résztvevők száma:</label>
+                <input type="text" class="form-control" id="numberOfPeople">
+                <span class="input-group-text">fő</span>
+            </div>
+            <div class="middle">
+                <button type="button" class="btn btn-light" onclick="count()">Számolás</button>
+            </div>
+            <div class="input-group-sm field d-none" id="divPrice">
+                <label>Útiköltség:</label>
+                <input type="text" class="form-control" id="priceOfTrip">
+                <span class="input-group-text">Ft</span>
+            </div>
+            <div class="input-group-sm field d-none" id="divPricePerPeople">
+                <label for="priceOfTripPerPerson">Fejenként:</label>
+                <input type="text" class="form-control" id="priceOfTripPerPerson">
+                <span class="input-group-text">Ft/fő</span>
+            </div>
+        </div>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
