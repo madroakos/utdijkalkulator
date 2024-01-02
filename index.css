@@ -19,8 +19,12 @@ body {
     align-items: center;
 }
 
-.field > input, select {
+.field > input {
     width: 110px;
+    margin-left: 10px;
+}
+.field > select {
+    width: 140px;
     margin-left: 10px;
 }
 
